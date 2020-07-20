@@ -130,7 +130,6 @@ client60.login(process.env.TOKEN60);
 
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
       
   if (message.content.startsWith(prefix + 'pl')) {
     client.user.setGame(argresult);
