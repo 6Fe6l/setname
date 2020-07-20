@@ -291,7 +291,7 @@ client3.on('message', message => {
   
     });
 
-     client27.on('message', message => {
+     client7.on('message', message => {
       var prefix = ".";
   
       let argresult = message.content.split(` `).slice(1).join(' ');
