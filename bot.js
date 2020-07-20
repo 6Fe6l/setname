@@ -128,69 +128,72 @@ client60.login(process.env.TOKEN60);
 
 
 
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      
-  if (message.content.startsWith(prefix + 'pl')) {
-    client.user.setGame(argresult);
-      message.channel.send("**:white_check_mark: | The Playing Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(aprefix + 'wt')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send("**:white_check_mark: | The Watching Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(aprefix + 'ls')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send("**:white_check_mark: | The Listening Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(prefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/i_kahrba999");
-      message.channel.send("**:white_check_mark: | The Streaming Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  }
-  if (message.content.startsWith(prefix + 'setname')) {
-  client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
-} else
-if (message.content.startsWith(prefix + 'setavatar')) {
-  client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
-}
-});
+ const developers = ["287898437058560000","222810335902564353","id 3","id 4"] 
+  client.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+      } else if(message.content.startsWith(prefix + 'setWatching')) {
+          client.user.setActivity(argresult,{type: 'WATCHING'});
+  
+        } else if(message.content.startsWith(prefix + 'setListening')) {
+          client.user.setActivity(argresult,{type: 'LISTENING'});
+  
+        } else if(message.content.startsWith(prefix + 'setPlaying')) {
+          client.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'setName')) {
+          client.user.setUsername(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setAvatar')) {
+          client.user.setAvatar(argresult);
+  
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client.user.setStatus(argresult);
+  
+  
+      }
+  
+    });
 
-client2.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
-      
-  if (message.content.startsWith(prefix + '2pl')) {
-    client.user.setGame(argresult);
-      message.channel.send("**:white_check_mark: | The Playing Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(aprefix + 'wt')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send("**:white_check_mark: | The Watching Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(aprefix + 'ls')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send("**:white_check_mark: | The Listening Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  } else 
-  if (message.content.startsWith(prefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/i_kahrba999");
-      message.channel.send("**:white_check_mark: | The Streaming Status Has Been Changed To : ``"
-   + `${argresult}` + "``**")
-  }
-  if (message.content.startsWith(prefix + 'setname')) {
-  client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
-} else
-if (message.content.startsWith(prefix + 'setavatar')) {
-  client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
-}
-});
+
+ client2.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+      } else if(message.content.startsWith(prefix + 'setWatching')) {
+          client.user.setActivity(argresult,{type: 'WATCHING'});
+  
+        } else if(message.content.startsWith(prefix + 'setListening')) {
+          client.user.setActivity(argresult,{type: 'LISTENING'});
+  
+        } else if(message.content.startsWith(prefix + 'setPlaying')) {
+          client.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'setName')) {
+          client.user.setUsername(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setAvatar')) {
+          client.user.setAvatar(argresult);
+  
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client.user.setStatus(argresult);
+  
+  
+      }
+  
+    });
