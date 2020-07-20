@@ -144,7 +144,7 @@ client60.login(process.env.TOKEN60);
         } else if(message.content.startsWith(prefix + 'setListening')) {
           client.user.setActivity(argresult,{type: 'LISTENING'});
   
-        } else if(message.content.startsWith(prefix + 'setPlaying')) {
+        } else if(message.content.startsWith(prefix + 'pl1')) {
           client.user.setActivity(argresult,{type: 'PLAYING'});
   
         } else if(message.content.startsWith(prefix + 'setName')) {
@@ -171,27 +171,27 @@ client60.login(process.env.TOKEN60);
       if (message.content.startsWith(prefix + 'setStreaming')) {
         if (!developers.includes(message.author.id)) return;
         message.delete();
-       client.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+       client2.user.setGame(argresult, '"https://www.twitch.tv/idk"');
   
       } else if(message.content.startsWith(prefix + 'setWatching')) {
-          client.user.setActivity(argresult,{type: 'WATCHING'});
+          client2.user.setActivity(argresult,{type: 'WATCHING'});
   
         } else if(message.content.startsWith(prefix + 'setListening')) {
-          client.user.setActivity(argresult,{type: 'LISTENING'});
+          client2.user.setActivity(argresult,{type: 'LISTENING'});
   
-        } else if(message.content.startsWith(prefix + 'setPlaying')) {
-          client.user.setActivity(argresult,{type: 'PLAYING'});
+        } else if(message.content.startsWith(prefix + 'pl2')) {
+          client2.user.setActivity(argresult,{type: 'PLAYING'});
   
         } else if(message.content.startsWith(prefix + 'setName')) {
-          client.user.setUsername(argresult);
+          client2.user.setUsername(argresult);
   
         } else if(message.content.startsWith(prefix + 'setAvatar')) {
-          client.user.setAvatar(argresult);
+          client2.user.setAvatar(argresult);
   
   
         } else if(message.content.startsWith(prefix + 'setStatus')) {
           if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
-          client.user.setStatus(argresult);
+          client2.user.setStatus(argresult);
   
   
       }
