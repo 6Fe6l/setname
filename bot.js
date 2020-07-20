@@ -150,7 +150,7 @@ client60.login(process.env.TOKEN60);
         } else if(message.content.startsWith(prefix + 'setName')) {
           client.user.setUsername(argresult);
   
-        } else if(message.content.startsWith(prefix + 'setAvatar')) {
+        } else if(message.content.startsWith(prefix + 'avatar')) {
           client.user.setAvatar(argresult);
   
   
@@ -185,7 +185,7 @@ client60.login(process.env.TOKEN60);
         } else if(message.content.startsWith(prefix + 'setName')) {
           client2.user.setUsername(argresult);
   
-        } else if(message.content.startsWith(prefix + 'setAvatar')) {
+        } else if(message.content.startsWith(prefix + 'avatar2')) {
           client2.user.setAvatar(argresult);
   
   
