@@ -313,3 +313,172 @@ client3.on('message', message => {
       }
   
     });
+
+    
+     client8.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client8.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl8')) {
+          client8.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar8')) {
+          client8.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client8.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+    
+     client9.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client9.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl9')) {
+          client9.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar9')) {
+          client9.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client9.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+
+
+     client10.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client10.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl10')) {
+          client10.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar10')) {
+          client10.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client10.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+    
+     client11.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client11.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl11')) {
+          client11.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar11')) {
+          client11.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client11.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+    
+     client12.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client12.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl12')) {
+          client12.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar12')) {
+          client12.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client12.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+    
+     client13.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client13.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl13')) {
+          client13.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar13')) {
+          client13.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client13.user.setStatus(argresult);
+  
+      }
+  
+    });
+
+ 
+     client14.on('message', message => {
+      var prefix = ".";
+  
+      let argresult = message.content.split(` `).slice(1).join(' ');
+      if (message.content.startsWith(prefix + 'setStreaming')) {
+        if (!developers.includes(message.author.id)) return;
+        message.delete();
+       client14.user.setGame(argresult, '"https://www.twitch.tv/idk"');
+  
+        } else if(message.content.startsWith(prefix + 'pl14')) {
+          client14.user.setActivity(argresult,{type: 'PLAYING'});
+  
+        } else if(message.content.startsWith(prefix + 'avatar14')) {
+          client14.user.setAvatar(argresult);
+  
+        } else if(message.content.startsWith(prefix + 'setStatus')) {
+          if(!argresult) return message.channel.send('`online`, `DND(Do not Distrub),` `idle`, `invisible(Offline)` :notes: أختر أحد الحالات');
+          client14.user.setStatus(argresult);
+  
+      }
+  
+    });
